@@ -1,0 +1,15 @@
+# weighted exam score average
+
+# entering how many credits these exams cover
+number_of_exams = int(input("entrer number of examas: "))
+
+# entering how many credits these exams cover
+total_credits = int(input("entrer how many credits these exams cover: "))
+
+#begin with average of 0 and then add up percentages from each exam
+average = 0
+for exam in range(number_of_exams):
+    score = int(input("enter exam score: "))
+    exam_credits = int(input("entrer how many creadits this exam covered: "))
+    average = average + score*exam_credits/total_credits
+    print("your average is", average)
